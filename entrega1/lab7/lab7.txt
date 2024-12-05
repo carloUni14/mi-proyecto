@@ -1,0 +1,51 @@
+    1  git --version
+    2  git config
+    3  git config --global user.name "CARMA"
+    4  git config --global user.email "carlo.avila.ttc.038@unilibre.edu.co"
+    5  git config --list
+    6  mkdir miPrimerRepositorio
+    7  cd miPrimerRepositorio
+    8  pwd
+    9  git init
+   10  echo "#Mi primer repositorio">README.md
+   11  ls
+   12  cat README.md
+   13  git add README.md 
+   14  git commit -m "Commit inicial: Añadir README.md"
+   15  git branch desarrollo
+   16  git checkout desarrollo
+   17  echo "Este es un cambio en la rama de desarrollo">>README.md
+   18  cat README.md 
+   19  code .
+   20  git checkout master
+   21  git merge desarrollo
+   22  history >> lab6.txt
+   23  code .
+   24  exit
+   25  git clone https://github.com/carloUni14/mi-proyecto.git
+   26  mkdir mi-nuevo-proyecto
+   27  ls
+   28  cd mi-nuevo-proyecto/
+   29  git init
+   30  echo "#Mi nuevo proyecto"> README.md
+   31  ls
+   32  cat README.md
+   33  git add README.md 
+   34  git commit -m " Agregar archivo README.md"
+   35  git remote add origin https://github.com/carloUni14/mi-nuevo-proyecto
+   36  git remote add origin https://github.com/carloUni14/mi-nuevo-proyecto.git
+   37  git remote -v
+   38  git remote remove origin
+   39  git remote add origin https://github.com/carloUni14/mi-nuevo-proyecto.git
+   40  git checkout -b nueva-rama
+   41  git push -u origin nueva-rama
+   42  echo "<html> <body> <h1> Hola mundo </h1> </body> </html>" > hola.html
+   43  ls
+   44  cat hola.html
+   45  git add hola.html 
+   46  git commit -m "Agregar archivo hola.html con mensaje de hola mundo"
+   47  git push -u origin nueva-rama
+   48  git history >historial.txt
+   49  git history
+   50  history
+   51  history >lab7.txt
