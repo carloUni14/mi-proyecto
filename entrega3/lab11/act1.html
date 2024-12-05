@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>act1</title>
+</head>
+<body>
+    <script>
+        let califi = parseInt(prompt("Ingrese una calificación entre 0 y 100: "));
+
+        if(califi>= 0 && califi<=100){
+            if(califi>=90){
+                document.write("Aprobado con honores");
+            }
+            else if(califi>=70){
+                document.write("Aprobado");
+            }
+            else{
+                document.write("Reprobado");
+            }
+        }
+        else{
+            document.write("Por favor ingrese un dato valido");
+        }
+    </script>
+</body>
+</html>

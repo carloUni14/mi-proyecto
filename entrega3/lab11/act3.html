@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>act3</title>
+</head>
+<body>
+    <script>
+        let monto = parseFloat(prompt("Ingrese el monto total de la compra: "));
+
+        if(monto>100){
+            let descuento = monto * 0.10;
+            let montof = monto - descuento;
+
+            document.write("El monto final a pagar, con un descuento del 10% es de: "+montof.toFixed(2));
+        }
+        else{
+            document.write("El monto final a pagar es: "+monto.toFixed(2));
+        }
+    </script>
+</body>
+</html>
